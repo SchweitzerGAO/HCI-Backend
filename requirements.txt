@@ -1,0 +1,7 @@
+tensorflow-gpu~=2.6.0
+pyyaml~=6.0
+numpy~=1.19.5
+matplotlib~=3.5.2
+ipython~=8.3.0
+flask
+flask-cors
