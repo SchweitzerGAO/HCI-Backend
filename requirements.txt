@@ -1,7 +1,9 @@
-tensorflow-gpu~=2.6.0
-pyyaml~=6.0
-numpy~=1.19.5
 matplotlib~=3.5.2
-ipython~=8.3.0
-flask
-flask-cors
+numpy~=1.19.5
+tensorflow-gpu~=2.6.0
+scipy~=1.8.1
+flask~=2.1.2
+tensorflowTTS
+scipy
+flask_cors
+git+https://github.com/repodiac/german_transliterate.git#egg=german_transliterate

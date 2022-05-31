@@ -81,4 +81,6 @@ def visualize_mel_spectrogram(mels):
 
 def tts(input_text):
     mels, alignment_history, audios = do_synthesis(input_text, tacotron2, mb_melgan, "TACOTRON", "MB-MELGAN")
-    write('result.wav', 24000, audios)
+    write('../result/result.wav', 24000, audios)
+
+
