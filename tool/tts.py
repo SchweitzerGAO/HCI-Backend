@@ -1,3 +1,5 @@
+import shutil
+import os
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
@@ -79,8 +81,12 @@ def visualize_mel_spectrogram(mels):
     plt.close()
 
 
-def tts(input_text):
-    mels, alignment_history, audios = do_synthesis(input_text, tacotron2, mb_melgan, "TACOTRON", "MB-MELGAN")
-    write('../result/result.wav', 24000, audios)
+def tts(text_list):
+    shutil.rmtree('./result')
+    os.mkdir('./result')
+    for text in text_list:
+        mels, alignment_history, audios = do_synthesis(text, tacotron2, mb_melgan, "TACOTRON", "MB-MELGAN")
+        write(f'./result/{text[0:4]}.wav', 24000, audios)
+    # return audios
 
 

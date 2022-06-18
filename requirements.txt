@@ -7,3 +7,4 @@ tensorflowTTS
 scipy
 flask_cors
 git+https://github.com/repodiac/german_transliterate.git#egg=german_transliterate
+requests
